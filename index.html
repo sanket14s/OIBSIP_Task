@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Dominoz_Landing_Page</title>
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href="#"> <img src="./img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Dil, Dosti,<br><span>Domino's!</span></h2>
+                <p>The call-to-action tells customers they can now order a pizza by texting the pizza emoji, or “EASY ORDER” to Domino's SMS short code 374992.</p>
+                <a href="#">more</a>
+            </div>
+            <div class="imgbox">
+                <img src="./img/img1.png" class="dominos">
+            </div>
+        </div>
+        <ul class="logo">
+            <li><img src="./img/logo1.png" onclick="imgSlider('./img/img1.png');changeCircleColor('#006491')"></li>
+            <li><img src="./img/logo2.png" onclick="imgSlider('./img/img2.png');changeCircleColor('#e31837')"></li>
+        </ul>
+        <ul class="multi">
+            <li><a href="#"><img src="./img/facebook.png"></a></li>
+            <li><a href="#"><img src="./img/instagram.png"></a></li>
+            <li><a href="#"><img src="./img/twitter.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.dominos').src =anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
